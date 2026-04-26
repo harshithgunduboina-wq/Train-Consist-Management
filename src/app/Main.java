@@ -1,14 +1,21 @@
 package app;
 
-import model.Coach;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-        Coach c1 = new Coach("S1", "Sleeper");
-        Coach c2 = new Coach("AC1", "AC");
+        // Welcome message
+        System.out.println("=== Train Consist Management App ===");
 
-        System.out.println(c1);
-        System.out.println(c2);
+        // Initialize empty train consist
+        List<String> trainConsist = new ArrayList<>();
+
+        // Display initial bogie count
+        System.out.println("Train consist initialized.");
+        System.out.println("Initial number of bogies: " + trainConsist.size());
+
+        // Program continues...
     }
 }
